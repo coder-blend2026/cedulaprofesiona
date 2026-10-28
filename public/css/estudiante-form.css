@@ -1,0 +1,93 @@
+/* Estudiante form styles */
+.estudiante-form__section {
+  border: 1px solid #e8ded8;
+  border-radius: 10px;
+  padding: 14px 14px 16px;
+  margin: 0 0 16px;
+  min-width: 0;
+}
+
+.estudiante-form__legend {
+  padding: 0 6px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--vino, #641434);
+}
+
+.estudiante-form__hint {
+  margin: 4px 0 12px;
+  font-size: 13px;
+  color: #6b605b;
+  line-height: 1.35;
+}
+
+.estudiante-form__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr));
+  gap: 14px 16px;
+}
+
+.panel-field--wide {
+  grid-column: 1 / -1;
+}
+
+.panel-field__label {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  color: #463a35;
+  margin-bottom: 6px;
+}
+
+.req {
+  color: #8d1f3f;
+}
+
+.panel-field__input {
+  width: 100%;
+  border: 1px solid #d3c7c1;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 15px;
+  background: #fffdfc;
+  box-sizing: border-box;
+}
+
+select.panel-field__input {
+  cursor: pointer;
+}
+
+.panel-field__input--error {
+  border-color: #c23a5c;
+  box-shadow: 0 0 0 2px rgba(194, 58, 92, 0.12);
+}
+
+.panel-field__input[readOnly] {
+  background: #f3ece8;
+  color: #5c524d;
+}
+
+.panel-field__error {
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #8d1f3f;
+}
+
+.panel-field__hint {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  color: #6b605b;
+}
+
+.panel-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 16px;
+  margin-top: 4px;
+  border-top: 1px solid #eee5df;
+}

@@ -1,0 +1,133 @@
+/* Constancia preview styles */
+.constancia-btn {
+  border: 1px solid #8f7757;
+  background: #fff;
+  color: #8f7757;
+  border-radius: 4px;
+  width: 28px;
+  height: 28px;
+  display: inline-grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.constancia-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.constancia-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.constancia-preview-backdrop {
+  z-index: 120;
+  align-items: flex-start;
+  padding-top: 48px;
+}
+
+.constancia-preview-card {
+  width: min(720px, 100% - 32px);
+  max-height: min(92vh, 880px);
+  display: flex;
+  flex-direction: column;
+}
+
+.constancia-preview-body {
+  text-align: left;
+  overflow-y: auto;
+}
+
+.constancia-preview-lead {
+  font-size: 15px !important;
+  line-height: 1.45 !important;
+  color: #5d524d !important;
+  margin-bottom: 16px !important;
+}
+
+.constancia-preview-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
+  align-items: start;
+}
+
+@media (max-width: 640px) {
+  .constancia-preview-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.constancia-preview-dl {
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.constancia-preview-dl div {
+  margin: 0;
+}
+
+.constancia-preview-dl dt {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #7a6e68;
+  margin-bottom: 2px;
+}
+
+.constancia-preview-dl dd {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2f3948;
+  line-height: 1.35;
+}
+
+.constancia-preview-qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid #e4d8d2;
+  border-radius: 10px;
+  background: #fcfbfa;
+}
+
+.constancia-preview-qr img {
+  display: block;
+  border-radius: 6px;
+}
+
+.constancia-preview-qr-fallback {
+  margin: 0;
+  font-size: 14px !important;
+  color: #6b605b !important;
+}
+
+.constancia-preview-link {
+  font-size: 14px !important;
+  color: var(--vino) !important;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.constancia-preview-error {
+  margin: 12px 0 0;
+  color: #8d1f3f;
+  font-weight: 600;
+  font-size: 14px !important;
+}
+
+.constancia-preview-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #e8ded8;
+}

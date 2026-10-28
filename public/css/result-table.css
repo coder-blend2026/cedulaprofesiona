@@ -1,0 +1,119 @@
+/* Result table and pagination styles */
+.result-card {
+  margin-top: 0;
+  border: 1px solid #d8d8d8;
+  border-top: none;
+  background: #f5f5f6;
+}
+
+.result-title {
+  margin: 0;
+  padding: 20px 16px 10px;
+  text-align: center;
+  font-size: 26px;
+  font-family: 'Montserrat', var(--sans);
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: #2f3948;
+}
+
+.result-table-wrap {
+  overflow-x: auto;
+}
+
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  min-width: 1150px;
+  background: #f5f5f6;
+}
+
+.result-table th,
+.result-table td {
+  border-top: 1px solid #d5d5d5;
+  padding: 10px 10px;
+  text-align: left;
+  vertical-align: top;
+  color: #2f3948;
+  font-size: 13px;
+  line-height: 1.35;
+  font-family: 'Source Sans 3', var(--sans);
+}
+
+.result-table th {
+  font-size: 15px;
+  font-weight: 700;
+  color: #2f3948;
+}
+
+.result-table th:nth-child(1),
+.result-table td:nth-child(1) {
+  width: 92px;
+}
+
+.result-table th:nth-child(2),
+.result-table td:nth-child(2),
+.result-table th:nth-child(3),
+.result-table td:nth-child(3),
+.result-table th:nth-child(4),
+.result-table td:nth-child(4),
+.result-table th:nth-child(5),
+.result-table td:nth-child(5),
+.result-table th:nth-child(8),
+.result-table td:nth-child(8),
+.result-table th:nth-child(9),
+.result-table td:nth-child(9) {
+  width: 115px;
+}
+
+.result-table th:nth-child(10),
+.result-table td:nth-child(10) {
+  width: 88px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 16px 12px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0 20px;
+  flex-wrap: wrap;
+}
+
+.page-btn {
+  min-width: 40px;
+  height: 40px;
+  border: 1px solid #d2d2d2;
+  background: #f3f3f3;
+  color: #404040;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.page-btn + .page-btn {
+  border-left: none;
+}
+
+.page-btn.active {
+  background: var(--vino);
+  color: #fff;
+  border-color: var(--vino);
+  font-weight: 700;
+}
+
+.page-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+
+h3, h2, h1 {
+  font-family: "Patria", "noso Sans", "Helvetica", "Arial", sans-serif !important;
+}

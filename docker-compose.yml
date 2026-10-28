@@ -1,0 +1,12 @@
+services:
+  sitio:
+    build: .
+    ports:
+      - "8080:80"
+    environment:
+      APP_DEBUG: "false"
+      # FRONTEND_URL: "https://tu-dominio.com"   # opcional: dominio que lleva el QR del PDF
+    volumes:
+      # La base de datos y la caché del PDF viven fuera del contenedor para no perderse.
+      - ./database:/var/www/html/database
+      - ./storage:/var/www/html/storage

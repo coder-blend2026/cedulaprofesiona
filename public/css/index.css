@@ -1,0 +1,62 @@
+
+:root {
+  --vino: #641434;
+  --vino-dark: #390b1f;
+  --cream: #f7f2ef;
+  --ink: #2f2422;
+  --gold: #b58b4c;
+  --paper: #fff;
+
+  font: 18px/155% var(--sans);
+  letter-spacing: 0.2px;
+  color: var(--ink);
+  background: var(--cream);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+
+h2 {
+  font-size: 32px;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+@media (max-width: 980px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@font-face {
+  font-family: 'PatriaCustom';
+  src: url('../fonts/patria.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1, h2, h3 {
+  font-family: 'PatriaCustom', sans-serif !important;
+}

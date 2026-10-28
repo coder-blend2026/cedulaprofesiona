@@ -1,0 +1,93 @@
+/* Content, card, tabs, and notice styles */
+.content {
+  background: #fff;
+  padding: 32px 0 56px;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #6b5e5a;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.breadcrumb .home::before {
+  content: '⌂';
+  margin-right: 6px;
+  color: var(--gold);
+}
+
+.breadcrumb .current {
+  font-weight: 600;
+}
+
+.rule {
+  width: 80px;
+  height: 4px;
+  background: var(--gold);
+  margin: 16px 0 20px;
+}
+
+.lead {
+  max-width: 840px;
+  font-size: 18px;
+  color: #5d524d;
+}
+
+.notice {
+  margin: 40px 0 16px;
+  text-align: left;
+  color: #3a2f2c;
+}
+
+.notice h3 {
+  font-size: 20px;
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+.notice p {
+  font-size: 22px;
+}
+
+.card {
+  background: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 18px 40px rgba(30, 20, 18, 0.12);
+  border: 1px solid #ece7e4;
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid #e2d9d4;
+  padding: 0 24px;
+}
+
+.tab {
+  background: transparent;
+  border: none;
+  padding: 14px 18px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #6a5c57;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.tab.active {
+  background: var(--vino);
+  color: #fff;
+}
+
+.card__body {
+  padding: 24px;
+}
+
+.card__body--cedula {
+  min-height: 330px;
+  display: flex;
+  flex-direction: column;
+}
